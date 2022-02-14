@@ -1,0 +1,8 @@
+https://astexplorer.net/
+https://dash.cloudflare.com/f6774eabe4f23feac14dbcb39f56e63d/workers/overview
+
+- Creating a Cloudflare worker (eventually )
+- Caching GraphQL queries using a KV store
+- Traversing a GraphQL AST using a visit function
+- Manipulating a GraphQL query using the AST
+- Tracking typenames of queries + mutations
