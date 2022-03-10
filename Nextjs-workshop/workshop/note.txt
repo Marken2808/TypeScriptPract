@@ -1,3 +1,0 @@
-deployed: https://neo4j-graphql-nextjs-workshop.vercel.app/
-graphql query: url + 'api/graphql'
-router: url + 'articles'
