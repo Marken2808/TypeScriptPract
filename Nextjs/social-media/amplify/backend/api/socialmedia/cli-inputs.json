@@ -6,8 +6,8 @@
     "gqlSchemaPath": "/Users/nctuan/Desktop/T-Drive/Practical/TypeScriptPract/Nextjs/social-media/amplify/backend/api/socialmedia/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 7,
-      "apiKeyExpirationDate": "2022-03-26T01:05:25.624Z",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-03-23T19:32:03.054Z",
       "keyDescription": ""
     },
     "additionalAuthTypes": [

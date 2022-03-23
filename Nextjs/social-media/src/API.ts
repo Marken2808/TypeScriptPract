@@ -7,6 +7,7 @@ export type CreatePostInput = {
   title: string,
   contents: string,
   image?: string | null,
+  owner?: string | null,
 };
 
 export type ModelPostConditionInput = {
@@ -64,6 +65,7 @@ export type Post = {
   title?: string,
   contents?: string,
   image?: string | null,
+  owner?: string | null,
   createdAt?: string,
   updatedAt?: string,
   comments?: ModelCommentConnection,
@@ -107,6 +109,7 @@ export type UpdatePostInput = {
   title?: string | null,
   contents?: string | null,
   image?: string | null,
+  owner?: string | null,
 };
 
 export type DeletePostInput = {
@@ -182,6 +185,7 @@ export type ModelPostFilterInput = {
   title?: ModelStringInput | null,
   contents?: ModelStringInput | null,
   image?: ModelStringInput | null,
+  owner?: ModelStringInput | null,
   and?: Array< ModelPostFilterInput | null > | null,
   or?: Array< ModelPostFilterInput | null > | null,
   not?: ModelPostFilterInput | null,
@@ -223,6 +227,7 @@ export type CreatePostMutation = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -264,6 +269,7 @@ export type UpdatePostMutation = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -305,6 +311,7 @@ export type DeletePostMutation = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -353,6 +360,7 @@ export type CreateCommentMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -386,6 +394,7 @@ export type UpdateCommentMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -419,6 +428,7 @@ export type DeleteCommentMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -452,6 +462,7 @@ export type CreateVoteMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -485,6 +496,7 @@ export type UpdateVoteMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -518,6 +530,7 @@ export type DeleteVoteMutation = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -543,6 +556,7 @@ export type GetPostQuery = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -587,6 +601,7 @@ export type ListPostsQuery = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -620,6 +635,7 @@ export type GetCommentQuery = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -656,6 +672,7 @@ export type ListCommentsQuery = {
         title: string,
         contents: string,
         image?: string | null,
+        owner?: string | null,
         createdAt: string,
         updatedAt: string,
       } | null,
@@ -682,6 +699,7 @@ export type GetVoteQuery = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -718,6 +736,7 @@ export type ListVotesQuery = {
         title: string,
         contents: string,
         image?: string | null,
+        owner?: string | null,
         createdAt: string,
         updatedAt: string,
       } | null,
@@ -733,6 +752,7 @@ export type OnCreatePostSubscription = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -769,6 +789,7 @@ export type OnUpdatePostSubscription = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -805,6 +826,7 @@ export type OnDeletePostSubscription = {
     title: string,
     contents: string,
     image?: string | null,
+    owner?: string | null,
     createdAt: string,
     updatedAt: string,
     comments?:  {
@@ -848,6 +870,7 @@ export type OnCreateCommentSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -876,6 +899,7 @@ export type OnUpdateCommentSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -904,6 +928,7 @@ export type OnDeleteCommentSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -932,6 +957,7 @@ export type OnCreateVoteSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -960,6 +986,7 @@ export type OnUpdateVoteSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {
@@ -988,6 +1015,7 @@ export type OnDeleteVoteSubscription = {
       title: string,
       contents: string,
       image?: string | null,
+      owner?: string | null,
       createdAt: string,
       updatedAt: string,
       comments?:  {

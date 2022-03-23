@@ -9,6 +9,7 @@ export const getPost = /* GraphQL */ `
       title
       contents
       image
+      owner
       createdAt
       updatedAt
       comments {
@@ -46,6 +47,7 @@ export const listPosts = /* GraphQL */ `
         title
         contents
         image
+        owner
         createdAt
         updatedAt
         comments {
@@ -72,6 +74,7 @@ export const getComment = /* GraphQL */ `
         title
         contents
         image
+        owner
         createdAt
         updatedAt
         comments {
@@ -102,6 +105,7 @@ export const listComments = /* GraphQL */ `
           title
           contents
           image
+          owner
           createdAt
           updatedAt
         }
@@ -123,6 +127,7 @@ export const getVote = /* GraphQL */ `
         title
         contents
         image
+        owner
         createdAt
         updatedAt
         comments {
@@ -153,6 +158,7 @@ export const listVotes = /* GraphQL */ `
           title
           contents
           image
+          owner
           createdAt
           updatedAt
         }
